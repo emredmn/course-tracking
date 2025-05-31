@@ -1,0 +1,607 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "eric123",
+      "password": "1234",
+      "role": "student",
+      "name": "Eric Dunn"
+    },
+    {
+      "id": 2,
+      "username": "alice456",
+      "password": "abcd",
+      "role": "student",
+      "name": "Alice Young"
+    },
+    {
+      "id": 3,
+      "username": "michael",
+      "password": "hoca",
+      "role": "teacher",
+      "name": "Michael Smith",
+      "courses": [
+        "Mathematics"
+      ]
+    },
+    {
+      "id": 4,
+      "username": "alan789",
+      "password": "qwer",
+      "role": "student",
+      "name": "Alan King"
+    },
+    {
+      "id": 5,
+      "username": "fiona101",
+      "password": "zxcv",
+      "role": "student",
+      "name": "Fiona Clark"
+    },
+    {
+      "id": 6,
+      "username": "henry202",
+      "password": "asdf",
+      "role": "student",
+      "name": "Henry Owen"
+    },
+    {
+      "id": 7,
+      "username": "zoey303",
+      "password": "7890",
+      "role": "student",
+      "name": "Zoey Davis"
+    },
+    {
+      "id": 8,
+      "username": "matt404",
+      "password": "jklm",
+      "role": "student",
+      "name": "Matt Bright"
+    },
+    {
+      "id": 9,
+      "username": "ella505",
+      "password": "uiop",
+      "role": "student",
+      "name": "Ella Stone"
+    },
+    {
+      "id": 10,
+      "username": "caleb606",
+      "password": "4567",
+      "role": "student",
+      "name": "Caleb Archer"
+    },
+    {
+      "id": 11,
+      "username": "sophia707",
+      "password": "rtyu",
+      "role": "student",
+      "name": "Sophia Cole"
+    },
+    {
+      "id": 12,
+      "username": "kevin808",
+      "password": "fghj",
+      "role": "student",
+      "name": "Kevin Young"
+    },
+    {
+      "id": 13,
+      "username": "emma909",
+      "password": "vbnm",
+      "role": "student",
+      "name": "Emma Parker"
+    },
+    {
+      "id": 14,
+      "username": "brian111",
+      "password": "2345",
+      "role": "student",
+      "name": "Brian Evans"
+    },
+    {
+      "id": 15,
+      "username": "diana222",
+      "password": "yuiop",
+      "role": "student",
+      "name": "Diana Adams"
+    },
+    {
+      "id": 16,
+      "username": "oliver333",
+      "password": "5678",
+      "role": "student",
+      "name": "Oliver Taylor"
+    },
+    {
+      "id": 17,
+      "username": "eva444",
+      "password": "ghjk",
+      "role": "student",
+      "name": "Eva Gordon"
+    },
+    {
+      "id": 18,
+      "username": "yusuf555",
+      "password": "9012",
+      "role": "student",
+      "name": "Joseph Carter"
+    },
+    {
+      "id": 19,
+      "username": "mia666",
+      "password": "cvbn",
+      "role": "student",
+      "name": "Mia Kelly"
+    },
+    {
+      "id": 20,
+      "username": "oscar777",
+      "password": "3456",
+      "role": "student",
+      "name": "Oscar Shaw"
+    },
+    {
+      "id": 21,
+      "username": "sara888",
+      "password": "tyui",
+      "role": "student",
+      "name": "Sara Dean"
+    },
+    {
+      "id": 22,
+      "username": "adam999",
+      "password": "klmn",
+      "role": "student",
+      "name": "Adam Knight"
+    },
+    {
+      "id": 23,
+      "username": "nora1110",
+      "password": "8901",
+      "role": "student",
+      "name": "Nora Carter"
+    },
+    {
+      "id": 24,
+      "username": "kyle1212",
+      "password": "wert",
+      "role": "student",
+      "name": "Kyle Allen"
+    },
+    {
+      "id": 25,
+      "username": "daphne1313",
+      "password": "uiopq",
+      "role": "student",
+      "name": "Daphne Green"
+    },
+    {
+      "id": 26,
+      "username": "barry1414",
+      "password": "6789",
+      "role": "student",
+      "name": "Barry Ellis"
+    },
+    {
+      "id": 27,
+      "username": "clara1515",
+      "password": "asdfg",
+      "role": "student",
+      "name": "Clara Brooks"
+    },
+    {
+      "id": 28,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Admin User"
+    },
+    {
+      "id": 29,
+      "username": "eric1234",
+      "password": "1234",
+      "role": "student",
+      "name": "Eric Dunn"
+    },
+    {
+      "id": 30,
+      "username": "ethanwalker",
+      "password": "1234",
+      "role": "teacher",
+      "name": "Ethan Walker",
+      "courses": [
+        "Literature"
+      ]
+    },
+    {
+      "id": 31,
+      "username": "sunnyhill",
+      "password": "1234",
+      "role": "student",
+      "name": "Sunny Hill"
+    },
+    {
+      "id": 32,
+      "username": "ivyhill",
+      "password": "1234",
+      "role": "student",
+      "name": "Ivy Hill",
+      "courses": [
+        "Language and Expression"
+      ]
+    },
+    {
+      "id": 33,
+      "username": "jakefrost",
+      "password": "1234",
+      "role": "teacher",
+      "name": "Jake Frost",
+      "courses": [
+        "Language and Expression"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Simon Young",
+      "username": "simon",
+      "password": "1234",
+      "role": "teacher",
+      "courses": [
+        "Biology"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Mike Taylor",
+      "username": "miket",
+      "password": "1234",
+      "role": "student",
+      "courses": [
+        "Programming"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Sam Stone",
+      "username": "samstone",
+      "password": "1234",
+      "role": "student",
+      "courses": [
+        "Programming"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Ethan Star",
+      "username": "ethan1",
+      "password": "1234",
+      "role": "student",
+      "courses": [
+        "Programming",
+        "Databases"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "John Doe",
+      "username": "john",
+      "password": "1234",
+      "role": "teacher",
+      "courses": [
+        "Programming",
+        "Databases"
+      ]
+    }
+  ],
+  "grades": [
+    {
+      "studentId": 1,
+      "course": "Mathematics",
+      "grade": 71
+    },
+    {
+      "studentId": 1,
+      "course": "Physics",
+      "grade": 10
+    },
+    {
+      "studentId": 2,
+      "course": "Mathematics",
+      "grade": 85
+    },
+    {
+      "studentId": 2,
+      "course": "Chemistry",
+      "grade": 92
+    },
+    {
+      "studentId": 4,
+      "course": "Mathematics",
+      "grade": 65
+    },
+    {
+      "studentId": 4,
+      "course": "Literature",
+      "grade": 88
+    },
+    {
+      "studentId": 5,
+      "course": "Mathematics",
+      "grade": 90
+    },
+    {
+      "studentId": 5,
+      "course": "Biology",
+      "grade": 75
+    },
+    {
+      "studentId": 6,
+      "course": "Mathematics",
+      "grade": 55
+    },
+    {
+      "studentId": 6,
+      "course": "Physics",
+      "grade": 60
+    },
+    {
+      "studentId": 7,
+      "course": "Mathematics",
+      "grade": 82
+    },
+    {
+      "studentId": 7,
+      "course": "Chemistry",
+      "grade": 78
+    },
+    {
+      "studentId": 8,
+      "course": "Mathematics",
+      "grade": 45
+    },
+    {
+      "studentId": 8,
+      "course": "Literature",
+      "grade": 95
+    },
+    {
+      "studentId": 9,
+      "course": "Mathematics",
+      "grade": 88
+    },
+    {
+      "studentId": 9,
+      "course": "Biology",
+      "grade": 70
+    },
+    {
+      "studentId": 10,
+      "course": "Mathematics",
+      "grade": 72
+    },
+    {
+      "studentId": 10,
+      "course": "Physics",
+      "grade": 50
+    },
+    {
+      "studentId": 11,
+      "course": "Mathematics",
+      "grade": 95
+    },
+    {
+      "studentId": 11,
+      "course": "Chemistry",
+      "grade": 85
+    },
+    {
+      "studentId": 12,
+      "course": "Mathematics",
+      "grade": 60
+    },
+    {
+      "studentId": 12,
+      "course": "IoT",
+      "grade": 80
+    },
+    {
+      "studentId": 13,
+      "course": "Mathematics",
+      "grade": 78
+    },
+    {
+      "studentId": 13,
+      "course": "Biology",
+      "grade": 65
+    },
+    {
+      "studentId": 14,
+      "course": "Mathematics",
+      "grade": 50
+    },
+    {
+      "studentId": 14,
+      "course": "Physics",
+      "grade": 45
+    },
+    {
+      "studentId": 15,
+      "course": "Mathematics",
+      "grade": 85
+    },
+    {
+      "studentId": 15,
+      "course": "Chemistry",
+      "grade": 90
+    },
+    {
+      "studentId": 16,
+      "course": "Mathematics",
+      "grade": 92
+    },
+    {
+      "studentId": 16,
+      "course": "Literature",
+      "grade": 87
+    },
+    {
+      "studentId": 17,
+      "course": "Mathematics",
+      "grade": 68
+    },
+    {
+      "studentId": 17,
+      "course": "Biology",
+      "grade": 82
+    },
+    {
+      "studentId": 18,
+      "course": "Mathematics",
+      "grade": 75
+    },
+    {
+      "studentId": 18,
+      "course": "Physics",
+      "grade": 55
+    },
+    {
+      "studentId": 19,
+      "course": "Mathematics",
+      "grade": 80
+    },
+    {
+      "studentId": 19,
+      "course": "Chemistry",
+      "grade": 88
+    },
+    {
+      "studentId": 20,
+      "course": "Mathematics",
+      "grade": 62
+    },
+    {
+      "studentId": 20,
+      "course": "Literature",
+      "grade": 90
+    },
+    {
+      "studentId": 21,
+      "course": "Mathematics",
+      "grade": 87
+    },
+    {
+      "studentId": 21,
+      "course": "Biology",
+      "grade": 70
+    },
+    {
+      "studentId": 22,
+      "course": "Mathematics",
+      "grade": 55
+    },
+    {
+      "studentId": 22,
+      "course": "Physics",
+      "grade": 60
+    },
+    {
+      "studentId": 23,
+      "course": "Mathematics",
+      "grade": 93
+    },
+    {
+      "studentId": 23,
+      "course": "Chemistry",
+      "grade": 85
+    },
+    {
+      "studentId": 24,
+      "course": "Mathematics",
+      "grade": 70
+    },
+    {
+      "studentId": 24,
+      "course": "Literature",
+      "grade": 92
+    },
+    {
+      "studentId": 25,
+      "course": "Mathematics",
+      "grade": 82
+    },
+    {
+      "studentId": 25,
+      "course": "Biology",
+      "grade": 78
+    },
+    {
+      "studentId": 26,
+      "course": "Mathematics",
+      "grade": 58
+    },
+    {
+      "studentId": 26,
+      "course": "Physics",
+      "grade": 50
+    },
+    {
+      "studentId": 27,
+      "course": "Chemistry",
+      "grade": 94
+    },
+    {
+      "studentId": 32,
+      "course": "Language and Expression",
+      "grade": 70
+    }
+  ],
+  "courses": [
+    {
+      "course": "Mathematics",
+      "credit": 4
+    },
+    {
+      "course": "Physics",
+      "credit": 3
+    },
+    {
+      "course": "Chemistry",
+      "credit": 3
+    },
+    {
+      "course": "Biology",
+      "credit": 2
+    },
+    {
+      "course": "Literature",
+      "credit": 2
+    },
+    {
+      "course": "IoT",
+      "credit": 3
+    },
+    {
+      "course": "Language and Expression",
+      "credit": 4
+    },
+    {
+      "course": "Philosophy",
+      "credit": 3
+    },
+    {
+      "course": "Programming",
+      "credit": 5
+    },
+    {
+      "course": "Databases",
+      "credit": 5
+    },
+    {
+      "course": "Test",
+      "credit": 5
+    }
+  ]
+}

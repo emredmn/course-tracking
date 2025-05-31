@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teacher Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="teacher-page">
+  <div id="app">
+    <header>Course Tracking and Grade System</header>
+    <main>
+      <h2>Welcome, <span id="userName"></span></h2>
+      <h3>Student Grades</h3>
+      <input type="text" id="search" placeholder="Search by Student ID, Name, or Course">
+      <table id="gradesTable" class="user-table">
+        <thead>
+          <tr><th>Student ID</th><th>Name</th><th>Course</th><th>Grade</th><th>Actions</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="error-message" id="saveError"></p>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </main>
+    <div class="footer">Web Application Programming Course Project</div>
+  </div>
+  <script src="teacher.js"></script>
+</body>
+</html>

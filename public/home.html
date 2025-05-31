@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Course Tracking System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo" onclick="window.location.href='/'">Course Tracking System</div>
+      <div class="nav-buttons">
+        <button id="btnLogin" onclick="window.location.href='/index.html'">Login</button>
+        <button id="btnContact">Contact</button>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <section id="homeSection">
+      <h1>Welcome!</h1>
+      <p>With this platform, you can track your courses, view your grades, and communicate with your teachers.</p>
+    </section>
+    <section id="contactSection" class="hidden">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send</button>
+        <p class="error-message" id="contactStatus"></p>
+      </form>
+    </section>
+  </main>
+  <div class="footer">Web Application Programming Course Project</div>
+  <script>
+    const btnContact = document.getElementById('btnContact');
+    const contactSection = document.getElementById('contactSection');
+    const contactForm = document.getElementById('contactForm');
+    const contactStatus = document.getElementById('contactStatus');
+
+    // Force add the hidden class when the page loads
+    contactSection.classList.add('hidden');
+    console.log('Script loaded, btnContact:', btnContact, 'contactSection:', contactSection);
+    console.log('contactSection display:', getComputedStyle(contactSection).display);
+
+    btnContact.addEventListener('click', () => {
+      contactSection.classList.toggle('hidden');
+      console.log('Contact button clicked, contactSection hidden:', contactSection.classList.contains('hidden'));
+      console.log('contactSection display:', getComputedStyle(contactSection).display);
+    });
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      contactStatus.textContent = '';
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        contactStatus.style.color = '#f43f5e';
+        contactStatus.textContent = 'Please fill in all fields.';
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        contactStatus.style.color = '#f43f5e';
+        contactStatus.textContent = 'Please enter a valid email address.';
+        return;
+      }
+
+      const formData = { name, email, message };
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+        if (!response.ok) {
+          throw new Error(result.message || 'Message could not be sent.');
+        }
+
+        contactStatus.style.color = '#10b981';
+        contactStatus.textContent = 'Your message has been received, thank you!';
+        contactForm.reset();
+        setTimeout(() => contactStatus.textContent = '', 3000);
+      } catch (err) {
+        contactStatus.style.color = '#f43f5e';
+        contactStatus.textContent = err.message;
+      }
+    });
+  </script>
+</body>
+</html>

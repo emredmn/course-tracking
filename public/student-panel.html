@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="student-page">
+  <div id="app">
+    <header>Course Tracking and Grade System</header>
+    <main>
+      <h2>Welcome, <span id="userName"></span></h2>
+      <h3>Your Courses</h3>
+      <table id="gradesTable" class="user-table">
+        <thead>
+          <tr><th>Course</th><th>Grade</th></tr>
+        </thead>
+        <tbody id="gradesBody"></tbody>
+      </table>
+      <button class="logout-btn" id="logoutBtn">Logout</button>
+    </main>
+    <div class="footer">Web Application Programming Course Project</div>
+  </div>
+  <script src="student.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Panel - Course Tracking System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-page">
+  <header>
+    <nav class="navbar">
+      <div class="logo" onclick="window.location.href='/'">Course Tracking System</div>
+      <div class="nav-buttons">
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <section>
+      <h1>Admin Panel</h1>
+      <div class="admin-buttons">
+        <button id="btnShowMessages">View Messages</button>
+        <button id="btnAddStudent">Add Student</button>
+        <button id="btnAddTeacher">Add Teacher</button>
+        <button id="btnAddCourse">Add Course</button>
+        <button id="btnListUsers">List Users</button>
+      </div>
+    </section>
+    <section id="messagesSection" class="hidden">
+      <h2>Messages</h2>
+      <button class="submit-btn" id="showMessages">Load Messages</button>
+      <table id="messagesTable" class="hidden">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="messagesBody"></tbody>
+      </table>
+    </section>
+    <section id="addStudentSection" class="hidden">
+      <h2>Add Student</h2>
+      <form id="addStudentForm">
+        <div class="form-group">
+          <label for="studentName">Name</label>
+          <input type="text" id="studentName" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="studentUsername">Username</label>
+          <input type="text" id="studentUsername" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="studentPassword">Password</label>
+          <input type="password" id="studentPassword" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="studentCourses">Courses</label>
+          <select id="studentCourses" name="courses" multiple></select>
+        </div>
+        <button type="submit" class="submit-btn">Add</button>
+        <p class="error-message" id="studentError"></p>
+      </form>
+    </section>
+    <section id="addTeacherSection" class="hidden">
+      <h2>Add Teacher</h2>
+      <form id="addTeacherForm">
+        <div class="form-group">
+          <label for="teacherName">Name</label>
+          <input type="text" id="teacherName" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="teacherUsername">Username</label>
+          <input type="text" id="teacherUsername" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="teacherPassword">Password</label>
+          <input type="password" id="teacherPassword" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="teacherCourses">Courses</label>
+          <select id="teacherCourses" name="courses" multiple></select>
+        </div>
+        <button type="submit" class="submit-btn">Add</button>
+        <p class="error-message" id="teacherError"></p>
+      </form>
+    </section>
+    <section id="addCourseSection" class="hidden">
+      <h2>Add Course</h2>
+      <form id="addCourseForm">
+        <div class="form-group">
+          <label for="courseName">Course Name</label>
+          <input type="text" id="courseName" name="course" required>
+        </div>
+        <div class="form-group">
+          <label for="courseCredit">Credit</label>
+          <input type="number" id="courseCredit" name="credit" min="1" required>
+        </div>
+        <button type="submit" class="submit-btn">Add</button>
+        <p class="error-message" id="courseError"></p>
+      </form>
+    </section>
+    <section id="listUsersSection" class="hidden">
+      <h2>Users</h2>
+      <div class="tab-buttons">
+        <button class="tab-btn active" id="tabStudents">Students</button>
+        <button class="tab-btn" id="tabTeachers">Teachers</button>
+        <button class="tab-btn" id="tabAdmins">Admins</button>
+      </div>
+      <div class="form-group">
+        <label for="searchInput">Search by ID or Name</label>
+        <input type="text" id="searchInput" placeholder="Enter ID or name">
+      </div>
+      <div id="courseFilters" class="course-filters"></div>
+      <table id="usersTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Courses</th>
+          </tr>
+        </thead>
+        <tbody id="usersBody"></tbody>
+      </table>
+    </section>
+  </main>
+  <div class="footer">Web Application Programming Course Project</div>
+  <script src="admin.js"></script>
+</body>
+</html>
