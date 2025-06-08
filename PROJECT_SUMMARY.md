@@ -50,3 +50,8 @@
 - Simplify course and grade tracking
 - Facilitate communication between students and teachers
 - Centralize user and course management
+
+## Some accounts for login
+- **Admin**: username: admin, password: admin123
+- **Teacher**: username: michael, password: 1234
+- **Student**: username: eric123, password: 1234

@@ -17,7 +17,7 @@
     {
       "id": 3,
       "username": "michael",
-      "password": "hoca",
+      "password": "1234",
       "role": "teacher",
       "name": "Michael Smith",
       "courses": [
